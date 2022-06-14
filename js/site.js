@@ -28,6 +28,8 @@ function sendRequesttoTestAPI() {
 
     xhr.open("GET", url, true);
     xhr.setRequestHeader("Access-Control-Allow-Origin", window.location);
+    xhr.setRequestHeader("Access-Control-Allow-Methods", "GET, POST, PATCH, PUT, DELETE, OPTIONS");
+    xhr.setRequestHeader("Access-Control-Allow-Headers", "Origin, Content-Type, X-Auth-Token");
     
 
     xhr.ontimeout = function (e) {
