@@ -35,7 +35,5 @@ if (!$fp) {
     <footer>
         <p>OneIS website.</p>
     </footer>
-
 </body>
-
 </html>
