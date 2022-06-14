@@ -27,7 +27,7 @@ function sendRequesttoTestAPI() {
 
 
     xhr.open("GET", url, true);
-    xhr.setRequestHeader("Access-Control-Allow-Origin", "window.location");
+    xhr.setRequestHeader("Access-Control-Allow-Origin", window.location);
     
 
     xhr.ontimeout = function (e) {
